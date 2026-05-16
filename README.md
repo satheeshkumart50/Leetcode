@@ -8,4 +8,4 @@
 
 | # | Problem | Difficulty | LeetCode | Solution | Date Solved | Notes |
 |---|---------|-----------|----------|----------|-------------|-------|
-| 1 | Two Sum | Easy | [Link](https://leetcode.com/problems/two-sum/) | [Code](https://github.com/satheeshkumart50/Leetcode) | May 16, 2026 | - |
+| 1 | Two Sum | Easy | [Link](https://leetcode.com/problems/two-sum/) | [Code](https://github.com/satheeshkumart50/Leetcode) | May 16, 2026 | Array |
