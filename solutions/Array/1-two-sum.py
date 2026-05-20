@@ -1,7 +1,7 @@
 # 1. Two Sum
 # https://leetcode.com/problems/two-sum/
 # Time Complexity - O(n)
-# Space Complexity - O(1)
+# Space Complexity - O(n)
 # Category - Array
 # Hint - Use HashMap
 
