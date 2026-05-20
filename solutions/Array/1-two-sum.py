@@ -1,17 +1,19 @@
-# 1. Two Sum
-# https://leetcode.com/problems/two-sum/
+# 167. Two Sum II - Input Array Is Sorted
+# https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 # Time Complexity - O(n)
-# Space Complexity - O(n)
-# Hint - Use HashMap
+# Space Complexity - O(1)
+# Hint - Use two pointers in opposite direction, increment first_pt if sum of first_pt + last_pt is less than target, decrement last_pt if sum of first_pt + last_pt is greater than target
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
 
-        index_map = dict()
+        first_pt = 0
+        last_pt = len(numbers)-1
 
-        for x in range(0, len(nums)):
-            remainder = target - nums[x]
-            if remainder in index_map:
-                return [index_map[remainder], x]
+        while first_pt < last_pt:
+            sum = numbers[first_pt]+numbers[last_pt]
+            if sum == target:
+                return [first_pt+1, last_pt+1]
+            elif sum < target:
+                first_pt += 1
             else:
-                index_map[nums[x]] = x
+                last_pt -= 1
