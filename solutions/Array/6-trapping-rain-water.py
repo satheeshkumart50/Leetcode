@@ -8,23 +8,23 @@
 
     def trap(self, height: List[int]) -> int:
 
-        left_lst = [0]* len(height)
-        right_lst = [0]* len(height)
+        left_max_lst = [0] * len(height)
+        right_max_lst = [0] * len(height)
         max_ht = height[0]
         total_unit = 0
 
         for x in range(1, len(height)):
-            max_ht = max(max_ht, height[x-1])
-            left_lst[x] = max_ht
+            max_ht = max(max_ht, height[x - 1])
+            left_max_lst[x] = max_ht
 
-        max_ht = height[len(height)-1]
+        max_ht = height[len(height) - 1]
 
-        for x in range(len(height)-2, -1, -1):
-            max_ht = max(max_ht, height[x+1])
-            right_lst[x] = max_ht
+        for x in range(len(height) - 2, -1, -1):
+            max_ht = max(max_ht, height[x + 1])
+            right_max_lst[x] = max_ht
 
-        for x in range(0,len(height)):
-            temp_unit = min(left_lst[x],right_lst[x])-height[x]
+        for x in range(0, len(height)):
+            temp_unit = min(left_max_lst[x], right_max_lst[x]) - height[x]
 
             if temp_unit > 0:
                 total_unit += temp_unit
