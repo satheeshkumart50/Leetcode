@@ -3,7 +3,7 @@
 # Time Complexity - O(n)
 # Space Complexity - O(1)
 # Category - Array
-# Hint - Use three reverse operations to rotate the array, write a separate function index_rotate(self, nums, start_indx, end_indx) to reverse the array between two indices. first reverse the entire array self.index_rotate(nums, 0, k - 1), then reverse the first k elements self.index_rotate(nums, 0, k - 1) and then reverse the remaining n-k elements self.index_rotate(nums, 0, k - 1)
+# Hint - Use three reverse operations to rotate the array, write a separate function index_rotate(self, nums, start_indx, end_indx) to reverse the array between two indices. first reverse the entire array self.index_rotate(nums, 0, len(nums) - 1), then reverse the first k elements self.index_rotate(nums, 0, k - 1) and then reverse the remaining n-k elements self.index_rotate(nums, 0, k - 1) and when k is greater than the length of the array, we can use k = k % len(nums) to get the effective rotation, at the end we will have the rotated array in place and we return nothing as per the problem statement
 # Refer - video - https://www.youtube.com/watch?v=sIzV1SDc-yQ
 
     def rotate(self, nums: List[int], k: int) -> None:
