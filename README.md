@@ -2,7 +2,7 @@
 
 ## Progress
 **Solved:** 0/145 problems  
-**Last Updated:** May 30, 2026
+**Last Updated:** Jun 6, 2026
 
 ## Solutions
 
@@ -18,3 +18,4 @@
 | 11 | Container With Most Water | Medium | [Link](https://leetcode.com/problems/container-with-most-water/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/5-container-with-most-water.py?raw=true) | May 24, 2026 | Use two pointers in opposite direction, one pointer at the beginning of the array and other pointer at the end of the array, calculate the area between the two pointers and update the maximum area, then move the pointer which has smaller height, because moving the pointer with larger height will not increase the area, at the end we return the maximum area |
 | 42 | Trapping Rain Water | Hard | [Link](https://leetcode.com/problems/trapping-rain-water/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/6-trapping-rain-water.py?raw=true) | May 24, 2026 | Use two arrays to store the maximum height to the left and right of each element, then calculate the water trapped at each element using formula min(left_max, right_max) - height[i], if the result is positive then we add it to the total water trapped, at the end we return the total water trapped, we can optimize space by using the input array to store the maximum height to the left and right of each element, at the end we return the total water trapped |
 | 189 | Rotate Array | Medium | [Link](https://leetcode.com/problems/rotate-array/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/refs/heads/main/solutions/Array/7-rotate-array.py) | May 24, 2026 | Use three reverse operations to rotate the array, write a separate function index_rotate(self, nums, start_indx, end_indx) to reverse the array between two indices. first reverse the entire array self.index_rotate(nums, 0, len(nums) - 1), then reverse the first k elements self.index_rotate(nums, 0, k - 1) and then reverse the remaining n-k elements self.index_rotate(nums, 0, k - 1) and when k is greater than the length of the array, we can use k = k % len(nums) to get the effective rotation, at the end we will have the rotated array in place and we return nothing as per the problem statement |
+| 347 | Top K Frequent Elements | Medium | [Link](https://leetcode.com/problems/top-k-frequent-elements/) | [Code](https://github.com/satheeshkumart50/Leetcode/tree/2dea077c7f8b37424cae7e410ada133515250690/solutions/Array) | Jun 6, 2026 | - |
