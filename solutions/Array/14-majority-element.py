@@ -3,7 +3,7 @@
 # Time Complexity - O(n)
 # Space Complexity - O(1)
 # Category - Array
-# Hint - Use Boyer-Moore Voting Algorithm, we can keep track of a candidate and a count, we iterate through the array and if the current element is the same as the candidate, we increment the count, if it is different, we decrement the count, if the count becomes 0, we update the candidate to the current element and reset the count to 1, at the end we return the candidate, we can add an additional check to verify if the candidate is actually the majority element by counting its occurrences in the array and comparing it to n/2, but in this problem we are guaranteed that there is a majority element so this check is not necessary
+# Hint - Use Boyer-Moore Voting Algorithm, we can keep track of a candidate and a count, this algorithm will just identify if majority element exists or not, it will not give the count of majority element that has to be calculated separately using nums.count(candidate)
 
     def majorityElement(self, nums: List[int]) -> int:
 
