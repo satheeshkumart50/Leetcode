@@ -2,7 +2,7 @@
 
 ## Progress
 **Solved:** 0/145 problems  
-**Last Updated:** Jun 6, 2026
+**Last Updated:** Jun 19, 2026
 
 ## Solutions
 
@@ -21,3 +21,4 @@
 | 347 | Top K Frequent Elements | Medium | [Link](https://leetcode.com/problems/top-k-frequent-elements/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/11-top-k-frequent-elements.py?raw=true) | May 31, 2026 | Use a frequency map to store the count of each element in the array, then use a bucket sort algorithm to group elements by their frequency, we can use a list of lists to store the elements with the same frequency, at the end we iterate through the bucket list in reverse order to get the top k frequent elements, important to use extend method to add elements of a list to another list, at the end we return the first k elements of the result list |
 | 169 | Majority Element | Easy | [Link](https://leetcode.com/problems/majority-element/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/14-majority-element.py?raw=true) | May 31, 2026 | Use Boyer-Moore Voting Algorithm, we can keep track of a candidate and a count, this algorithm will just identify if majority element exists or not, it will not give the count of majority element that has to be calculated separately using nums.count(candidate) |
 | 229 | Majority Element II | Medium | [Link](https://leetcode.com/problems/majority-element-ii/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/15-majority-element-ii.py?raw=true) | May 31, 2026 | Use Boyer-Moore Voting Algorithm, we can keep track of two candidates and their counts, this algorithm will just identify if majority elements exists or not, it will not give the count of majority elements that has to be calculated separately using nums.count(candidate) |
+| 128 | Longest Consecutive Sequence | Medium | [Link](https://leetcode.com/problems/longest-consecutive-sequence/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/16-longest-consecutive-sequence.py?raw=true) | Jun 19, 2026 | - |
