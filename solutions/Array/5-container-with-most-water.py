@@ -8,17 +8,17 @@
     def maxArea(self, height: List[int]) -> int:
 
         max_area = 0
-        forward_pt = 0
-        backward_pt = len(height) - forward_pt - 1
+        left_pt = 0
+        right_pt = len(height) - 1
 
-        while forward_pt < backward_pt:
-            left_height = height[forward_pt]
-            right_height = height[backward_pt]
-            current_area = (backward_pt - forward_pt) * min(left_height, right_height)
+        while left_pt < right_pt:
+            left_height = height[left_pt]
+            right_height = height[right_pt]
+            current_area = (right_pt - left_pt) * min(left_height, right_height)
             max_area = max(max_area, current_area)
             if left_height < right_height:
-                forward_pt += 1
+                left_pt += 1
             else:
-                backward_pt -= 1
+                right_pt -= 1
 
         return max_area
