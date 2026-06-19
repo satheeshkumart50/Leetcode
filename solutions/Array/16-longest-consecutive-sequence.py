@@ -4,7 +4,7 @@
 # Space Complexity - O(n)
 # Category - Array
 # Hint - Use a set to store the unique elements of the array, then iterate through the set and for each element, check if it is the start of a sequence (i.e. if num-1 is not in the set), if it is the start of a sequence, then we can keep checking for the next elements in the sequence (i.e. num+1, num+2, etc.) until we find an element that is not in the set, we can keep track of the length of the current sequence and update the maximum length at the end, at the end we return the maximum length of the consecutive sequence
-    # https://www.youtube.com/watch?v=gHyzQiFu4xY
+# https://www.youtube.com/watch?v=gHyzQiFu4xY
 
     def longestConsecutive(self, nums: List[int]) -> int:
 
