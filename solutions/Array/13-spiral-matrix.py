@@ -12,6 +12,12 @@
         top, bottom = 0, len(matrix) - 1
         spiral_lst = []
 
+        #      left-------------right
+        # top      | 0 1 2 3 0 |
+        #          │ 0 4 5 6 0 │
+        #          │ 2 4 5 6 3 │
+        # bottom   │ 0 7 8 9 0 │
+
         while len(spiral_lst) < (len(matrix) * len(matrix[0])):
 
             for i in range(left, right + 1):
