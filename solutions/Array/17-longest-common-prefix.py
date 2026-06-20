@@ -1,5 +1,6 @@
 # 14. Longest Common Prefix
 # https://leetcode.com/problems/longest-common-prefix/
+# Hint - Refer Two approaches mentioned in the code, but approach 1 is more efficient as it does not require sorting the list of strings, at the end we return the longest common prefix among all the strings in the list
 
     def longestCommonPrefix(self, strs: List[str]) -> str:
 
