@@ -4,6 +4,7 @@
 # Space Complexity - O(1) for the variables used in the algorithm
 # Category - Array
 # Hint - Use two pointers, one for each string, iterate through the strings and compare characters, if characters match, move the pointer for string s, always move the pointer for string t, at the end if pointer for string s has reached the end, return True else return False
+# video - https://www.youtube.com/watch?v=M_OB20n4hfo
     def isSubsequence(self, s: str, t: str) -> bool:
         
         i,j = 0,0
