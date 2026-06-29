@@ -1,7 +1,7 @@
 # DSA Problems Solutions
 
 ## Progress
-**Solved:** 28/146 problems  
+**Solved:** 29/146 problems  
 **Last Updated:** Jun 28, 2026
 
 ## Solutions
@@ -35,3 +35,4 @@
 | 567 | Permutation in String | Medium | [Link](https://leetcode.com/problems/permutation-in-string/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/25-permutation-in-string.py?raw=true) | Jun 20, 2026 | Use two character arrays to store the frequency of characters in s1 and s2, then iterate through s2 and for each substring of length equal to s1, compare the frequency arrays, if they are equal, return True, otherwise continue, at the end we return False if no permutation is found |
 | 155 | Min Stack | Medium | [Link](https://leetcode.com/problems/min-stack/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/26-min-stack.py?raw=true) | Jun 20, 2026 | Use two stacks, one for the elements and one for the minimum elements, when pushing an element, push it to the elements stack and if it is smaller than or equal to the top of the minimum stack, push it to the minimum stack, when popping an element, pop it from the elements stack and if it is equal to the top of the minimum stack, pop it from the minimum stack, when getting the top element, return the top of the elements stack, when getting the minimum element, return the top of the minimum stack |
 | 239 | Sliding Window Maximum | Hard | [Link](https://leetcode.com/problems/sliding-window-maximum/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/27-sliding-window-maximum.py?raw=true) | Jun 21, 2026 | Use a deque to store the indices of the elements in the sliding window, we can iterate through the array and for each element, we can remove the indices of the elements that are out of the current window from the front of the deque, then we can remove the indices of the elements that are smaller than the current element from the back of the deque, then we can add the index of the current element to the back of the deque, at each step we can add the element at the front of the deque to the result list as it will be the maximum element in the current window |
+| 76 | Minimum Window Substring | Hard | [Link](https://leetcode.com/problems/minimum-window-substring/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/28-minimum-window-substring.py?raw=true) | Jun 28, 2026 | - |
