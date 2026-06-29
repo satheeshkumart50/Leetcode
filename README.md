@@ -1,8 +1,8 @@
 # DSA Problems Solutions
 
 ## Progress
-**Solved:** 0/145 problems  
-**Last Updated:** Jun 20, 2026
+**Solved:** 22/146 problems  
+**Last Updated:** Jun 28, 2026
 
 ## Solutions
 
@@ -29,3 +29,4 @@
 | 53 | Maximum Subarray | Medium | [Link](https://leetcode.com/problems/maximum-subarray/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/19-maximum-subarray.py?raw=true) | Jun 14, 2026 | Use Kadane's Algorithm, we can keep track of the current sum and the maximum sum, we can iterate through the array and for each element we can update the current sum to be the maximum of the current element and the current sum plus the current element, then we can update the maximum sum to be the maximum of the maximum sum and the current sum, at the end we return the maximum sum which will be the largest sum of a contiguous subarray |
 | 392 | Is Subsequence | Easy | [Link](https://leetcode.com/problems/is-subsequence/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/refs/heads/main/solutions/Array/22-is-subsequence.py) | Jun 14, 2026 | Use two pointers, one for each string, iterate through the strings and compare characters, if characters match, move the pointer for string s, always move the pointer for string t, at the end if pointer for string s has reached the end, return True else return False |
 | 853 | Car Fleet | Medium | [Link](https://leetcode.com/problems/car-fleet/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/30-car-fleet.py?raw=true) | Jun 14, 2026 | Sort the cars based on their position in descending order, then iterate through the sorted list of cars and calculate the time it takes for each car to reach the target, if the time for the current car is greater than the time for the previous car, then it forms a new fleet, otherwise it joins the fleet of the previous car, we can keep track of the number of fleets and the time for the previous car, at the end we return the number of fleets |
+| 151 | Reverse Words in a String | Medium | [Link](https://leetcode.com/problems/reverse-words-in-a-string/) | [Code](https://raw.githubusercontent.com/satheeshkumart50/Leetcode/main/solutions/Array/20-reverse-words-in-a-string.py?raw=true) | Jun 28, 2026 | - |
